@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-teal-400 to-emerald-600 h-screen flex items-center justify-center">
+    <div class="w-full max-w-lg bg-white shadow-lg rounded-lg p-8 space-y-8">
+        <h1 class="text-4xl font-extrabold text-center text-gray-800">Age Calculator</h1>
+        <h2 class="text-2xl text-center font-semibold text-gray-700">Enter Your Birthdate</h2>
+
+        <form class="space-y-6 text-lg font-mono">
+            <div class="flex justify-between items-center">
+                <label class="w-1/3 text-center text-gray-600" for="day">Day</label>
+                <input id="day" class="w-1/3 px-4 py-2 border border-gray-300 rounded-md text-center" type="number" placeholder="Day" required min="1" max="31">
+            </div>
+            <div class="flex justify-between items-center">
+                <label class="w-1/3 text-center text-gray-600" for="month">Month</label>
+                <input id="month" class="w-1/3 px-4 py-2 border border-gray-300 rounded-md text-center" type="number" placeholder="Month" required min="1" max="12">
+            </div>
+            <div class="flex justify-between items-center">
+                <label class="w-1/3 text-center text-gray-600" for="year">Year</label>
+                <input id="year" class="w-1/3 px-4 py-2 border border-gray-300 rounded-md text-center" type="number" placeholder="Year" required>
+            </div>
+        </form>
+
+        <button class="w-full bg-blue-600 text-white py-3 rounded-full hover:bg-blue-800 font-medium text-xl" type="submit" id="submit">Check Age</button>
+
+        <div class="text-center mt-8">
+            <h3 class="text-2xl text-gray-800" id="view">Your age will appear here</h3>
+        </div>
+
+        <p class="text-center mt-8 text-sm text-gray-600">
+            <a href="https://github.com/AbrarShakilAhmed" class="hover:text-blue-500">Copyright &copy; claimed by Abrar Shakil</a>
+        </p>
+    </div>
+
+    <script src="Agecalculator.js"></script>
+</body>
+</html>
